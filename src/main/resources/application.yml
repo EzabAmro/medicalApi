@@ -1,0 +1,32 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/medicalApi?zeroDateTimeBehaviour=convertToNull&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&createDatabaseIfNotExist=true
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    protocol: smtp
+    username: baezmoranicolas@gmail.com
+    password: jpozdnxbtxrvmxrs
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+application:
+  name: Demo Twilio
+twilio:
+  account_sid: AC510b559eac4118dd126d5b3f505a33ff
+  auth_token: 4dd7d1857fda8871638c29cefe04e93f
+  trial_number: +17174529209
